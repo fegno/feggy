@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/packages/feggy_core/melos_feggy_core.iml" filepath="$PROJECT_DIR$/packages/feggy_core/melos_feggy_core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/packages/feggy_extensions/melos_feggy_extensions.iml" filepath="$PROJECT_DIR$/packages/feggy_extensions/melos_feggy_extensions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/packages/feggy_fast_network_image/melos_feggy_fast_network_image.iml" filepath="$PROJECT_DIR$/packages/feggy_fast_network_image/melos_feggy_fast_network_image.iml" />
+      <module fileurl="file://$PROJECT_DIR$/packages/feggy_logger/melos_feggy_logger.iml" filepath="$PROJECT_DIR$/packages/feggy_logger/melos_feggy_logger.iml" />
+      <module fileurl="file://$PROJECT_DIR$/packages/feggy_network/melos_feggy_network.iml" filepath="$PROJECT_DIR$/packages/feggy_network/melos_feggy_network.iml" />
+      <module fileurl="file://$PROJECT_DIR$/packages/feggy_responsive/melos_feggy_responsive.iml" filepath="$PROJECT_DIR$/packages/feggy_responsive/melos_feggy_responsive.iml" />
+      <module fileurl="file://$PROJECT_DIR$/packages/feggy_security/melos_feggy_security.iml" filepath="$PROJECT_DIR$/packages/feggy_security/melos_feggy_security.iml" />
+      <module fileurl="file://$PROJECT_DIR$/packages/feggy_sizer/melos_feggy_sizer.iml" filepath="$PROJECT_DIR$/packages/feggy_sizer/melos_feggy_sizer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/packages/feggy_storage/melos_feggy_storage.iml" filepath="$PROJECT_DIR$/packages/feggy_storage/melos_feggy_storage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/packages/feggy_updater/melos_feggy_updater.iml" filepath="$PROJECT_DIR$/packages/feggy_updater/melos_feggy_updater.iml" />
+      <module fileurl="file://$PROJECT_DIR$/packages/feggy_utils/melos_feggy_utils.iml" filepath="$PROJECT_DIR$/packages/feggy_utils/melos_feggy_utils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/melos_feggy.iml" filepath="$PROJECT_DIR$/melos_feggy.iml" />
+    </modules>
+  </component>
+</project>
