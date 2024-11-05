@@ -1,4 +1,4 @@
-import 'package:feggy_network/imports_bindings.dart';
+import 'package:feggy_network/src/imports_bindings.dart';
 
 part 'app_errors.freezed.dart';
 

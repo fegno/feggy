@@ -1,4 +1,4 @@
-import 'package:feggy_network/imports_bindings.dart';
+import 'package:feggy_network/src/imports_bindings.dart';
 
 /// Extension methods for Dio [Options] to handle common HTTP headers configuration.
 ///
