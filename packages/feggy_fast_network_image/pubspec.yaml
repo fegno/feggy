@@ -1,7 +1,7 @@
 name: feggy_fast_network_image
-description: A sample command-line application.
+description: A fast network image for feggy | flutter.
+repository: https://github.com/fegno/feggy/tree/main/packages/feggy_fast_network_image
 version: 1.0.0
-# repository: https://github.com/my_org/my_repo
 
 environment:
   sdk: ^3.5.4

@@ -1,13 +1,13 @@
 name: feggy_updater
-description: A sample command-line application.
+description: An updater for feggy.
+repository: https://github.com/fegno/feggy/tree/main/packages/feggy_updater
 version: 1.0.0
-# repository: https://github.com/my_org/my_repo
 
 environment:
   sdk: ^3.5.4
 
 # Add regular dependencies here.
-  # path: ^1.8.0
+# path: ^1.8.0
 
 dev_dependencies:
   cider: ^0.2.8

@@ -1,9 +1,7 @@
 name: feggy_exception
-description: A sample command-line application.
+description: A bunch of exceptions for feggy | flutter
+repository: https://github.com/fegno/feggy/tree/main/packages/feggy_exception
 version: 1.0.0
-# repository: https://github.com/my_org/my_repo
-
-publish_to: none
 
 environment:
   sdk: ^3.5.4

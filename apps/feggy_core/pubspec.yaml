@@ -1,9 +1,7 @@
 name: feggy_core
-description: A sample command-line application.
+description: A bunch of core utilities for flutter.
 version: 1.0.0
-# repository: https://github.com/my_org/my_repo
-
-publish_to: none
+repository: https://github.com/fegno/feggy/tree/main/apps/feggy_core
 
 environment:
   sdk: ^3.5.4
@@ -11,24 +9,16 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  feggy_exception:
-    path: ../../packages/feggy_exception
-  feggy_extensions:
-    path: ../../packages/feggy_extensions
-  feggy_logger:
-    path: ../../packages/feggy_logger
-  feggy_network:
-    path: ../../packages/feggy_network
-  feggy_responsive:
-    path: ../../packages/feggy_responsive
-  feggy_security:
-    path: ../../packages/feggy_security
-  feggy_sizer:
-    path: ../../packages/feggy_sizer
-  feggy_storage:
-    path: ../../packages/feggy_storage
-  feggy_updater:
-    path: ../../packages/feggy_updater
+
+  feggy_exception: ^1.0.0
+  feggy_extensions: ^1.0.0
+  feggy_logger: ^1.0.0
+  feggy_network: ^1.0.0
+  feggy_responsive: ^1.0.0
+  feggy_security: ^1.0.0
+  feggy_sizer: ^1.0.0
+  feggy_storage: ^1.0.0
+  feggy_updater: ^1.0.0
 
 dev_dependencies:
   cider: ^0.2.8

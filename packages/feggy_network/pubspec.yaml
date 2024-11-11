@@ -1,9 +1,7 @@
 name: feggy_network
-description: A sample command-line application.
+description: A bunch of network utilities for feggy|flutter
+repository: https://github.com/fegno/feggy/tree/main/packages/feggy_network
 version: 1.0.0
-repository: https://github.com/fegno/feggy_network
-
-publish_to: none
 
 environment:
   sdk: ^3.5.4
@@ -17,8 +15,7 @@ dependencies:
   cookie_jar: ^4.0.8
 
   #internal
-  feggy_exception:
-    path: ../feggy_exception
+  feggy_exception: ^1.0.0
 
 dev_dependencies:
   cider: ^0.2.8

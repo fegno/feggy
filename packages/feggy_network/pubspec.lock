@@ -177,9 +177,10 @@ packages:
   feggy_exception:
     dependency: "direct main"
     description:
-      path: "../feggy_exception"
-      relative: true
-    source: path
+      name: feggy_exception
+      sha256: ad2c677bc30f87e7cc0da4526778e9d4c15182f09fe6e0c5e1ee2972063d65ee
+      url: "https://pub.dev"
+    source: hosted
     version: "1.0.0"
   ffi:
     dependency: transitive
