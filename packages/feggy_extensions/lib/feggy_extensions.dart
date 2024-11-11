@@ -1,3 +1,3 @@
-int calculate() {
-  return 6 * 7;
-}
+library feggy_extensions;
+
+export 'src/src.dart';

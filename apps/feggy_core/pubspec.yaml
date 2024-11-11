@@ -3,11 +3,32 @@ description: A sample command-line application.
 version: 1.0.0
 # repository: https://github.com/my_org/my_repo
 
+publish_to: none
+
 environment:
   sdk: ^3.5.4
 
-# Add regular dependencies here.
-  # path: ^1.8.0
+dependencies:
+  flutter:
+    sdk: flutter
+  feggy_exception:
+    path: ../../packages/feggy_exception
+  feggy_extensions:
+    path: ../../packages/feggy_extensions
+  feggy_logger:
+    path: ../../packages/feggy_logger
+  feggy_network:
+    path: ../../packages/feggy_network
+  feggy_responsive:
+    path: ../../packages/feggy_responsive
+  feggy_security:
+    path: ../../packages/feggy_security
+  feggy_sizer:
+    path: ../../packages/feggy_sizer
+  feggy_storage:
+    path: ../../packages/feggy_storage
+  feggy_updater:
+    path: ../../packages/feggy_updater
 
 dev_dependencies:
   cider: ^0.2.8

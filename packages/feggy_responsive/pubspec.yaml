@@ -3,11 +3,16 @@ description: A sample command-line application.
 version: 1.0.0
 # repository: https://github.com/my_org/my_repo
 
+publish_to: none
+
 environment:
   sdk: ^3.5.4
 
 # Add regular dependencies here.
-  # path: ^1.8.0
+# path: ^1.8.0
+dependencies:
+  flutter:
+    sdk: flutter
 
 dev_dependencies:
   cider: ^0.2.8

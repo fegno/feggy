@@ -3,6 +3,8 @@ description: A sample command-line application.
 version: 1.0.0
 repository: https://github.com/fegno/feggy_network
 
+publish_to: none
+
 environment:
   sdk: ^3.5.4
 
@@ -10,14 +12,15 @@ environment:
 dependencies:
   fpdart: ^1.1.0
   dio: ^5.7.0
-  freezed_annotation: ^2.4.4
   connectivity_plus: ^6.1.0
   dio_cookie_manager: ^3.1.1
   cookie_jar: ^4.0.8
 
+  #internal
+  feggy_exception:
+    path: ../feggy_exception
+
 dev_dependencies:
-  build_runner: ^2.4.13
   cider: ^0.2.8
-  freezed: ^2.5.7
   lints: ^4.0.0
   test: ^1.24.0

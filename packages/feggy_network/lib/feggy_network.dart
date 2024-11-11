@@ -1,7 +1,3 @@
-/// Exports error handling related functionality.
-///
-/// This file serves as the main export point for all error-related
-/// classes and utilities used in the network layer.
-library;
+library feggy_network;
 
-export 'src/feggy_network.dart';
+export 'src/src.dart';

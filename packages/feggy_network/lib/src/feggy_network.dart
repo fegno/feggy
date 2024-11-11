@@ -1,4 +1,6 @@
-import 'package:feggy_network/src/imports_bindings.dart';
+import 'dart:async';
+
+import 'package:feggy_network/imports_bindings.dart';
 
 /// A network client wrapper that provides error handling and token management.
 ///
@@ -16,7 +18,7 @@ import 'package:feggy_network/src/imports_bindings.dart';
 ///   appDocDir: 'path/to/app/directory',
 ///   env: 'DEV',
 /// );
-/// 
+///
 /// // Making an API call
 /// final result = await network.call(
 ///   call: apiCall(),
@@ -44,7 +46,7 @@ final class FeggyNetwork {
   final Future<void>? Function()? onTokenError;
 
   /// Factory constructor that implements the singleton pattern.
-  /// 
+  ///
   /// Returns the existing instance if one exists, otherwise creates a new instance
   /// with the provided configuration.
   factory FeggyNetwork({
@@ -77,32 +79,32 @@ final class FeggyNetwork {
   static FeggyNetwork? _instance;
 
   /// Makes an API call with error handling and response transformation.
-  /// 
+  ///
   /// Parameters:
   /// - [call]: The Future representing the API call
   /// - [onSuccess]: Function to transform the successful response
   /// - [customHandler]: Optional custom error handler for specific cases
-  /// 
+  ///
   /// Returns a Future of type [T] representing the transformed response.
   /// Throws [ApiException] if the call fails.
   Future<T> call<R, T>({
     required Future<R> call,
-    required T Function(R data) onSuccess,
-    ApiException? Function(DioException e)? customHandler,
+    required FutureOr<T> Function(R data) onSuccess,
+    FutureOr<ApiException?> Function(DioException e)? customHandler,
   }) async {
     final json = await call.catchError((dynamic e) async {
       final error = await handle(e, customHandler: customHandler);
       throw error;
     });
-    return onSuccess(json);
+    return await onSuccess(json);
   }
 
   /// Handles various types of network errors and converts them to [ApiException]s.
-  /// 
+  ///
   /// Parameters:
   /// - [e]: The caught error/exception
   /// - [customHandler]: Optional custom error handler for specific cases
-  /// 
+  ///
   /// Returns an [ApiException] that represents the error in a standardized way.
   /// Handles various scenarios including:
   /// - Network connectivity issues
@@ -111,10 +113,10 @@ final class FeggyNetwork {
   /// - Environment-specific error messages
   Future<ApiException> handle(
     dynamic e, {
-    ApiException? Function(DioException e)? customHandler,
+    FutureOr<ApiException?> Function(DioException e)? customHandler,
   }) async {
     if (e is DioException) {
-      final customError = customHandler?.call(e);
+      final customError = await customHandler?.call(e);
       if (customError != null) {
         return customError;
       }
