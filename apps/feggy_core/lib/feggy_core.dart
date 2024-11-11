@@ -7,7 +7,7 @@ export 'src/src.dart';
 export 'package:feggy_exception/feggy_exception.dart';
 export 'package:feggy_extensions/feggy_extensions.dart';
 export 'package:feggy_logger/feggy_logger.dart';
-export 'package:feggy_network/feggy_network.dart';
+export 'package:feggy_network/feggy_network.dart' show FeggyConnectionChecker, cookieDio, OptionsX;
 export 'package:feggy_responsive/feggy_responsive.dart';
 export 'package:feggy_security/feggy_security.dart';
 export 'package:feggy_sizer/feggy_sizer.dart';
