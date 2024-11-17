@@ -193,74 +193,65 @@ packages:
   feggy_exception:
     dependency: "direct main"
     description:
-      name: feggy_exception
-      sha256: ad2c677bc30f87e7cc0da4526778e9d4c15182f09fe6e0c5e1ee2972063d65ee
-      url: "https://pub.dev"
-    source: hosted
+      path: "../../packages/feggy_exception"
+      relative: true
+    source: path
     version: "1.0.0"
   feggy_extensions:
     dependency: "direct main"
     description:
-      name: feggy_extensions
-      sha256: "780688fac7d5e1dbd922af6752b21ab73a83334c88edef679a43457a960f4021"
-      url: "https://pub.dev"
-    source: hosted
+      path: "../../packages/feggy_extensions"
+      relative: true
+    source: path
     version: "1.0.0"
   feggy_logger:
     dependency: "direct main"
     description:
-      name: feggy_logger
-      sha256: fba4ccb9755e12100c3b041da2ea25439d84222154335f6bf1201f89e6c14705
-      url: "https://pub.dev"
-    source: hosted
+      path: "../../packages/feggy_logger"
+      relative: true
+    source: path
     version: "1.0.0"
   feggy_network:
     dependency: "direct main"
     description:
-      name: feggy_network
-      sha256: "87d328743c5037b6da089b0f27fccb17fe35089925a4ff03074c92156409d200"
-      url: "https://pub.dev"
-    source: hosted
-    version: "1.0.0"
+      path: "../../packages/feggy_network"
+      relative: true
+    source: path
+    version: "1.0.1"
   feggy_responsive:
     dependency: "direct main"
     description:
-      name: feggy_responsive
-      sha256: c5e53cfa0585877f2866abce664b3a6680a578c75add71f6452ce9506cf986e2
-      url: "https://pub.dev"
-    source: hosted
+      path: "../../packages/feggy_responsive"
+      relative: true
+    source: path
     version: "1.0.0"
   feggy_security:
     dependency: "direct main"
     description:
-      name: feggy_security
-      sha256: "098e389045f15d6222f4d0d0bbc109fc0ee7534e90a3b12a8e3b56e8ad9a5018"
-      url: "https://pub.dev"
-    source: hosted
+      path: "../../packages/feggy_security"
+      relative: true
+    source: path
     version: "1.0.0"
   feggy_sizer:
     dependency: "direct main"
     description:
-      name: feggy_sizer
-      sha256: "5da55e6c0cd98c2a77a01ebfff4279a06e8be1994846b661b1b5a2577ba6b60d"
-      url: "https://pub.dev"
-    source: hosted
+      path: "../../packages/feggy_sizer"
+      relative: true
+    source: path
     version: "1.0.0"
   feggy_storage:
     dependency: "direct main"
     description:
-      name: feggy_storage
-      sha256: "492fe9ad58f5af7fde9762278ede4fe867dd2bc00650dca18276307df692b693"
-      url: "https://pub.dev"
-    source: hosted
+      path: "../../packages/feggy_storage"
+      relative: true
+    source: path
     version: "1.0.0"
   feggy_updater:
     dependency: "direct main"
     description:
-      name: feggy_updater
-      sha256: "5ad5780fc5227734139755676dbc833c8da746b8cef2602c3767b5bfa8234809"
-      url: "https://pub.dev"
-    source: hosted
+      path: "../../packages/feggy_updater"
+      relative: true
+    source: path
     version: "1.0.0"
   ffi:
     dependency: transitive
@@ -320,6 +311,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.1.2"
+  http:
+    dependency: transitive
+    description:
+      name: http
+      sha256: b9c29a161230ee03d3ccf545097fccd9b87a5264228c5d348202e0f0c28f9010
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.2.2"
   http_multi_server:
     dependency: transitive
     description:
@@ -336,6 +335,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "4.0.2"
+  internet_connection_checker_plus:
+    dependency: transitive
+    description:
+      name: internet_connection_checker_plus
+      sha256: "95da3194bdb98cb606b921f0e0007cbe55c32d6a7fa92d5debe59ef4183ce2a6"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.5.2"
   intl:
     dependency: transitive
     description:

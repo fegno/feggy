@@ -2,6 +2,7 @@ name: feggy_mini
 description: A mini app for feggy | flutter.
 version: 1.0.0
 repository: https://github.com/fegno/feggy/tree/main/apps/feggy_mini
+publish_to: none
 
 environment:
   sdk: ^3.5.4

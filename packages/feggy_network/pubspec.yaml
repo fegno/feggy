@@ -1,7 +1,7 @@
 name: feggy_network
 description: A bunch of network utilities for feggy|flutter
 repository: https://github.com/fegno/feggy/tree/main/packages/feggy_network
-version: 1.0.0
+version: 1.0.1
 
 environment:
   sdk: ^3.5.4

@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/apps/feggy_core/melos_feggy_core.iml" filepath="$PROJECT_DIR$/apps/feggy_core/melos_feggy_core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/packages/feggy_exception/melos_feggy_exception.iml" filepath="$PROJECT_DIR$/packages/feggy_exception/melos_feggy_exception.iml" />
       <module fileurl="file://$PROJECT_DIR$/packages/feggy_extensions/melos_feggy_extensions.iml" filepath="$PROJECT_DIR$/packages/feggy_extensions/melos_feggy_extensions.iml" />
       <module fileurl="file://$PROJECT_DIR$/packages/feggy_fast_network_image/melos_feggy_fast_network_image.iml" filepath="$PROJECT_DIR$/packages/feggy_fast_network_image/melos_feggy_fast_network_image.iml" />
       <module fileurl="file://$PROJECT_DIR$/packages/feggy_logger/melos_feggy_logger.iml" filepath="$PROJECT_DIR$/packages/feggy_logger/melos_feggy_logger.iml" />
@@ -13,7 +14,6 @@
       <module fileurl="file://$PROJECT_DIR$/packages/feggy_sizer/melos_feggy_sizer.iml" filepath="$PROJECT_DIR$/packages/feggy_sizer/melos_feggy_sizer.iml" />
       <module fileurl="file://$PROJECT_DIR$/packages/feggy_storage/melos_feggy_storage.iml" filepath="$PROJECT_DIR$/packages/feggy_storage/melos_feggy_storage.iml" />
       <module fileurl="file://$PROJECT_DIR$/packages/feggy_updater/melos_feggy_updater.iml" filepath="$PROJECT_DIR$/packages/feggy_updater/melos_feggy_updater.iml" />
-      <module fileurl="file://$PROJECT_DIR$/packages/feggy_utils/melos_feggy_utils.iml" filepath="$PROJECT_DIR$/packages/feggy_utils/melos_feggy_utils.iml" />
       <module fileurl="file://$PROJECT_DIR$/melos_feggy.iml" filepath="$PROJECT_DIR$/melos_feggy.iml" />
     </modules>
   </component>
