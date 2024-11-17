@@ -121,9 +121,7 @@ final class FeggyNetwork {
         return customError;
       }
       if (e.error.toString().contains('SocketException')) {
-        final connectivityResult = await Connectivity().checkConnectivity();
-        final hasConnection = !connectivityResult.contains(ConnectivityResult.none);
-
+        final hasConnection = await FeggyConnectionChecker.hasConnection;
         return hasConnection ? const ApiException.server() : const ApiException.network();
       } else if (onTokenError != null && tokenErrorCodes.contains(e.response?.statusCode)) {
         await onTokenError!();
