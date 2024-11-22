@@ -1,6 +1,6 @@
 name: feggy_core
 description: A bunch of core utilities for flutter.
-version: 1.0.3
+version: 1.0.4
 repository: https://github.com/fegno/feggy/tree/main/apps/feggy_core
 
 environment:
@@ -19,6 +19,9 @@ dependencies:
   feggy_sizer: ^1.0.0
   feggy_storage: ^1.0.0
   feggy_updater: ^1.0.0
+
+  #* State Management
+  flutter_bloc: ^8.1.6
 
 dev_dependencies:
   cider: ^0.2.8

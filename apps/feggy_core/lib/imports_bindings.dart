@@ -14,3 +14,6 @@ export 'package:feggy_security/feggy_security.dart';
 export 'package:feggy_sizer/feggy_sizer.dart';
 export 'package:feggy_storage/feggy_storage.dart';
 export 'package:feggy_updater/feggy_updater.dart';
+
+//*================[ externel packages ]=============================//
+export 'package:flutter_bloc/flutter_bloc.dart';

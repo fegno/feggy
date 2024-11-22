@@ -33,10 +33,10 @@ class Feggy {
   ///
   /// Throws an exception if the current context is null.
   static Future<void> pop() async {
-    if (Feggy.navKey.currentContext == null) {
+    if (context == null) {
       throw Exception('Feggy.navKey.currentContext is null');
     }
-    Feggy.navKey.currentContext!.pop();
+    context!.pop();
   }
 
   /// Pushes a new route onto the navigator.
@@ -44,10 +44,10 @@ class Feggy {
   /// [widget] is the new route to be pushed.
   /// Throws an exception if the current context is null.
   static Future<void> push(Widget widget) async {
-    if (Feggy.navKey.currentContext == null) {
+    if (context == null) {
       throw Exception('Feggy.navKey.currentContext is null');
     }
-    Feggy.navKey.currentContext!.push(widget);
+    context!.push(widget);
   }
 
   /// Replaces the current route with a new route.
@@ -55,10 +55,10 @@ class Feggy {
   /// [widget] is the new route to replace the current one.
   /// Throws an exception if the current context is null.
   static Future<void> pushReplacement(Widget widget) async {
-    if (Feggy.navKey.currentContext == null) {
+    if (context == null) {
       throw Exception('Feggy.navKey.currentContext is null');
     }
-    Feggy.navKey.currentContext!.pushReplacement(widget);
+    context!.pushReplacement(widget);
   }
 
   /// Pushes a new route and removes all previous routes until the specified route.
@@ -66,9 +66,31 @@ class Feggy {
   /// [widget] is the new route to be pushed.
   /// Throws an exception if the current context is null.
   static Future<void> pushAndRemoveUntil(Widget widget) async {
-    if (Feggy.navKey.currentContext == null) {
+    if (context == null) {
       throw Exception('Feggy.navKey.currentContext is null');
     }
-    Feggy.navKey.currentContext!.pushAndRemoveUntil(widget);
+    context!.pushAndRemoveUntil(widget);
+  }
+
+  /// Retrieves the specified type from the Bloc.
+  ///
+  /// [T] is the type of the Bloc to retrieve.
+  /// [listen] determines whether the caller should be notified of state changes.
+  /// Throws an exception if the current context is null.
+  static T bloc<T extends StateStreamableSource<Object?>>({
+    bool listen = false,
+  }) {
+    return BlocProvider.of<T>(context!, listen: listen);
+  }
+
+  /// Retrieves the current state of the specified type from the Bloc.
+  ///
+  /// [T] is the type of the state to retrieve.
+  /// [listen] determines whether the caller should be notified of state changes.
+  /// Returns the current state of the Bloc as type [T], or null if the state is not available.
+  static T? state<T extends StateStreamableSource<Object?>>({
+    bool listen = false,
+  }) {
+    return bloc<T>().state as T?;
   }
 }
