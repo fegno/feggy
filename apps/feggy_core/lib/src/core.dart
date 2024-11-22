@@ -88,9 +88,9 @@ class Feggy {
   /// [T] is the type of the state to retrieve.
   /// [listen] determines whether the caller should be notified of state changes.
   /// Returns the current state of the Bloc as type [T], or null if the state is not available.
-  static T? state<T extends StateStreamableSource<Object?>>({
+  static Object? state<T extends StateStreamableSource<Object?>>({
     bool listen = false,
   }) {
-    return bloc<T>().state as T?;
+    return bloc<T>().state;
   }
 }
