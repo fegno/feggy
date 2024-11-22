@@ -74,12 +74,16 @@ class Feggy {
 
   /// Retrieves the specified type from the Bloc.
   ///
-  /// [T] is the type of the Bloc to retrieve.
-  /// [listen] determines whether the caller should be notified of state changes.
-  /// Throws an exception if the current context is null.
-  static T bloc<T extends StateStreamableSource<Object?>>({
-    bool listen = false,
-  }) {
-    return BlocProvider.of<T>(context!, listen: listen);
+  /// This method allows you to access the current instance of a Bloc of type [T]
+  /// from the widget tree. It is useful for obtaining the state or functionality
+  /// of a Bloc without needing to rebuild the widget.
+  ///
+  /// [T] is the type of the Bloc to retrieve. It must be a type that is provided
+  /// in the widget tree above this context.
+  ///
+  /// Throws an [Exception] if the current context is null or if the Bloc of type [T]
+  /// is not found in the widget tree.
+  static T? read<T>() {
+    return context?.read<T>();
   }
 }
