@@ -82,15 +82,4 @@ class Feggy {
   }) {
     return BlocProvider.of<T>(context!, listen: listen);
   }
-
-  /// Retrieves the current state of the specified type from the Bloc.
-  ///
-  /// [T] is the type of the state to retrieve.
-  /// [listen] determines whether the caller should be notified of state changes.
-  /// Returns the current state of the Bloc as type [T], or null if the state is not available.
-  static Object? state<T extends StateStreamableSource<Object?>>({
-    bool listen = false,
-  }) {
-    return bloc<T>().state;
-  }
 }
