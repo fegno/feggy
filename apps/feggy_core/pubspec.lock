@@ -5,23 +5,23 @@ packages:
     dependency: transitive
     description:
       name: _fe_analyzer_shared
-      sha256: f256b0c0ba6c7577c15e2e4e114755640a875e885099367bf6e012b19314c834
+      sha256: "16e298750b6d0af7ce8a3ba7c18c69c3785d11b15ec83f6dcd0ad2a0009b3cab"
       url: "https://pub.dev"
     source: hosted
-    version: "72.0.0"
+    version: "76.0.0"
   _macros:
     dependency: transitive
     description: dart
     source: sdk
-    version: "0.3.2"
+    version: "0.3.3"
   analyzer:
     dependency: transitive
     description:
       name: analyzer
-      sha256: b652861553cd3990d8ed361f7979dc6d7053a9ac8843fa73820ab68ce5410139
+      sha256: "1f14db053a8c23e260789e9b0980fa27f2680dd640932cae5e1137cce0e46e1e"
       url: "https://pub.dev"
     source: hosted
-    version: "6.7.0"
+    version: "6.11.0"
   args:
     dependency: transitive
     description:
@@ -50,10 +50,10 @@ packages:
     dependency: transitive
     description:
       name: bloc
-      sha256: "106842ad6569f0b60297619e9e0b1885c2fb9bf84812935490e6c5275777804e"
+      sha256: "52c10575f4445c61dd9e0cafcc6356fdd827c4c64dd7945ef3c4105f6b6ac189"
       url: "https://pub.dev"
     source: hosted
-    version: "8.1.4"
+    version: "9.0.0"
   boolean_selector:
     dependency: transitive
     description:
@@ -106,10 +106,10 @@ packages:
     dependency: transitive
     description:
       name: collection
-      sha256: ee67cb0715911d28db6bf4af1026078bd6f0128b07a5f66fb2ed94ec6783c09a
+      sha256: a1ace0a119f20aabc852d165077c036cd864315bd99b7eaa10a60100341941bf
       url: "https://pub.dev"
     source: hosted
-    version: "1.18.0"
+    version: "1.19.0"
   connectivity_plus:
     dependency: transitive
     description:
@@ -201,65 +201,74 @@ packages:
   feggy_exception:
     dependency: "direct main"
     description:
-      path: "../../packages/feggy_exception"
-      relative: true
-    source: path
+      name: feggy_exception
+      sha256: ad2c677bc30f87e7cc0da4526778e9d4c15182f09fe6e0c5e1ee2972063d65ee
+      url: "https://pub.dev"
+    source: hosted
     version: "1.0.0"
   feggy_extensions:
     dependency: "direct main"
     description:
-      path: "../../packages/feggy_extensions"
-      relative: true
-    source: path
+      name: feggy_extensions
+      sha256: "780688fac7d5e1dbd922af6752b21ab73a83334c88edef679a43457a960f4021"
+      url: "https://pub.dev"
+    source: hosted
     version: "1.0.0"
   feggy_logger:
     dependency: "direct main"
     description:
-      path: "../../packages/feggy_logger"
-      relative: true
-    source: path
+      name: feggy_logger
+      sha256: fba4ccb9755e12100c3b041da2ea25439d84222154335f6bf1201f89e6c14705
+      url: "https://pub.dev"
+    source: hosted
     version: "1.0.0"
   feggy_network:
     dependency: "direct main"
     description:
-      path: "../../packages/feggy_network"
-      relative: true
-    source: path
+      name: feggy_network
+      sha256: "66ea94cf31b0de5173afd8816e3114a46dd7ef006a97a8d6866265a1f9eecd95"
+      url: "https://pub.dev"
+    source: hosted
     version: "1.0.2"
   feggy_responsive:
     dependency: "direct main"
     description:
-      path: "../../packages/feggy_responsive"
-      relative: true
-    source: path
+      name: feggy_responsive
+      sha256: c5e53cfa0585877f2866abce664b3a6680a578c75add71f6452ce9506cf986e2
+      url: "https://pub.dev"
+    source: hosted
     version: "1.0.0"
   feggy_security:
     dependency: "direct main"
     description:
-      path: "../../packages/feggy_security"
-      relative: true
-    source: path
+      name: feggy_security
+      sha256: "098e389045f15d6222f4d0d0bbc109fc0ee7534e90a3b12a8e3b56e8ad9a5018"
+      url: "https://pub.dev"
+    source: hosted
     version: "1.0.0"
   feggy_sizer:
     dependency: "direct main"
     description:
-      path: "../../packages/feggy_sizer"
-      relative: true
-    source: path
+      name: feggy_sizer
+      sha256: "5da55e6c0cd98c2a77a01ebfff4279a06e8be1994846b661b1b5a2577ba6b60d"
+      url: "https://pub.dev"
+    source: hosted
     version: "1.0.0"
   feggy_storage:
     dependency: "direct main"
     description:
-      path: "../../packages/feggy_storage"
-      relative: true
-    source: path
+      name: feggy_storage
+      sha256: "492fe9ad58f5af7fde9762278ede4fe867dd2bc00650dca18276307df692b693"
+      url: "https://pub.dev"
+    source: hosted
     version: "1.0.0"
   feggy_updater:
     dependency: "direct main"
     description:
-      path: "../../packages/feggy_updater"
-      relative: true
-    source: path
+      name: feggy_updater
+      sha256: "5ad5780fc5227734139755676dbc833c8da746b8cef2602c3767b5bfa8234809"
+      url: "https://pub.dev"
+    source: hosted
     version: "1.0.0"
   ffi:
     dependency: transitive
@@ -286,10 +295,10 @@ packages:
     dependency: "direct main"
     description:
       name: flutter_bloc
-      sha256: b594505eac31a0518bdcb4b5b79573b8d9117b193cc80cc12e17d639b10aa27a
+      sha256: "153856bdaac302bbdc58a1d1403d50c40557254aa05eaeed40515d88a25a526b"
       url: "https://pub.dev"
     source: hosted
-    version: "8.1.6"
+    version: "9.0.0"
   flutter_web_plugins:
     dependency: transitive
     description: flutter
@@ -395,10 +404,10 @@ packages:
     dependency: transitive
     description:
       name: macros
-      sha256: "0acaed5d6b7eab89f63350bccd82119e6c602df0f391260d0e32b5e23db79536"
+      sha256: "1d9e801cd66f7ea3663c45fc708450db1fa57f988142c64289142c9b7ee80656"
       url: "https://pub.dev"
     source: hosted
-    version: "0.1.2-main.4"
+    version: "0.1.3-main.0"
   markdown:
     dependency: transitive
     description:
@@ -587,7 +596,7 @@ packages:
     dependency: transitive
     description: flutter
     source: sdk
-    version: "0.0.99"
+    version: "0.0.0"
   source_map_stack_trace:
     dependency: transitive
     description:

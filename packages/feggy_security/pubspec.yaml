@@ -1,7 +1,7 @@
 name: feggy_security
 description: A bunch of security utilities for feggy|flutter.
 repository: https://github.com/fegno/feggy/tree/main/packages/feggy_security
-version: 1.0.0
+version: 1.0.1
 
 environment:
   sdk: ^3.5.4

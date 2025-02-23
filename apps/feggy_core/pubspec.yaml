@@ -10,18 +10,19 @@ dependencies:
   flutter:
     sdk: flutter
 
-  feggy_exception: ^1.0.0
-  feggy_extensions: ^1.0.0
-  feggy_logger: ^1.0.0
-  feggy_network: ^1.0.2
-  feggy_responsive: ^1.0.0
-  feggy_security: ^1.0.0
-  feggy_sizer: ^1.0.0
-  feggy_storage: ^1.0.0
-  feggy_updater: ^1.0.0
+  #* Packages
+  feggy_exception: ^1.0.1
+  feggy_extensions: ^1.0.1
+  feggy_logger: ^1.0.1
+  feggy_network: ^1.0.3
+  feggy_responsive: ^1.0.1
+  feggy_security: ^1.0.1
+  feggy_sizer: ^1.0.1
+  feggy_storage: ^1.0.1
+  feggy_updater: ^1.0.1
 
   #* State Management
-  flutter_bloc: ^8.1.6
+  flutter_bloc: ^9.0.0
 
 dev_dependencies:
   cider: ^0.2.8
