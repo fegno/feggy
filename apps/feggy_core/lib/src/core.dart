@@ -1,7 +1,5 @@
 import 'dart:async';
-
 import 'package:feggy_core/imports_bindings.dart';
-import 'package:feggy_network/imports_bindings.dart';
 
 class Feggy {
   /// A class that provides navigation utilities for the application.
