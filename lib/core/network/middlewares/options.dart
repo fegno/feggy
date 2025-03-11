@@ -1,5 +1,5 @@
 import 'package:dio/dio.dart';
-import 'package:feggy_core/core/network/feggy_network.dart';
+import '../feggy_network.dart';
 
 /// Extension methods for Dio [Options] to handle common HTTP headers configuration.
 ///
@@ -18,7 +18,7 @@ extension OptionsX on Options {
     };
 
     if (token.isNotEmpty) {
-      headers['Authorization'] = 'Token $token';
+      headers['Authorization'] = token;
     }
     return copyWith(
       headers: headers,

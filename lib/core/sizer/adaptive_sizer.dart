@@ -1,6 +1,6 @@
 import 'dart:math';
 
-import 'package:feggy_core/imports_bindings.dart';
+import '../../imports_bindings.dart';
 
 ///*
 @immutable

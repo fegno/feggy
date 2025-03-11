@@ -36,3 +36,6 @@
 
 - Added `Core` class.
 
+## 1.0.10
+
+- Removed `Token` prefix.

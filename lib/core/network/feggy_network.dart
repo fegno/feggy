@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:feggy_core/imports_bindings.dart';
+import '../../imports_bindings.dart';
 
 /// A network client wrapper that provides error handling and token management.
 ///

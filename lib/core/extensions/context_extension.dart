@@ -1,4 +1,4 @@
-import 'package:feggy_core/imports_bindings.dart';
+import '../../imports_bindings.dart';
 
 ///* This extension methords reduces
 extension BuildContextX on BuildContext {

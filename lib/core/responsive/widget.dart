@@ -1,4 +1,4 @@
-import 'package:feggy_core/imports_bindings.dart';
+import '../../imports_bindings.dart';
 
 /// A widget that adapts its child based on the screen size.
 class ResponsiveWidget extends StatelessWidget {

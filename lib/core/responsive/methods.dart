@@ -1,4 +1,4 @@
-import 'package:feggy_core/imports_bindings.dart';
+import '../../imports_bindings.dart';
 
 /// Checks if the screen size is considered small (width <= 400).
 bool isSmallScreen(BuildContext context) => _screenSize(context, (width) => width <= smallScreenSize);
