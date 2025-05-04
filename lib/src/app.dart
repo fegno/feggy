@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import '../imports_bindings.dart';
 
 class FeggyApp extends StatelessWidget {
@@ -8,6 +10,7 @@ class FeggyApp extends StatelessWidget {
     String env = '',
     List<int> tokenErrorCodes = const [401],
     Future<void>? Function()? onTokenError,
+    FutureOr<ApiException?> Function(DioException error)? commonErrorHandlers,
     super.key,
   }) {
     FeggyNetwork(
@@ -16,6 +19,7 @@ class FeggyApp extends StatelessWidget {
       env: env,
       tokenErrorCodes: tokenErrorCodes,
       onTokenError: onTokenError,
+      commonErrorHandles: commonErrorHandlers,
     );
   }
 

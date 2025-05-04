@@ -45,6 +45,12 @@ final class FeggyNetwork {
   /// Typically used for token refresh or user logout.
   final Future<void>? Function()? onTokenError;
 
+  /// Callback function for handling common errors.
+  /// This can be used to provide custom error handling logic.
+  /// It takes a [DioException] and returns an optional [ApiException].
+  /// If null, the default error handling will be used.
+  final FutureOr<ApiException?> Function(DioException error)? commonErrorHandles;
+
   /// Factory constructor that implements the singleton pattern.
   ///
   /// Returns the existing instance if one exists, otherwise creates a new instance
@@ -55,6 +61,7 @@ final class FeggyNetwork {
     String env = '',
     List<int> tokenErrorCodes = const [401],
     Future<void>? Function()? onTokenError,
+    FutureOr<ApiException?> Function(DioException error)? commonErrorHandles,
   }) {
     _instance ??= FeggyNetwork._(
       appDocDir: appDocDir,
@@ -62,6 +69,7 @@ final class FeggyNetwork {
       env: env,
       tokenErrorCodes: tokenErrorCodes,
       onTokenError: onTokenError,
+      commonErrorHandles: commonErrorHandles,
     );
     return _instance!;
   }
@@ -73,6 +81,7 @@ final class FeggyNetwork {
     required this.env,
     required this.tokenErrorCodes,
     required this.onTokenError,
+    this.commonErrorHandles,
   });
 
   /// Singleton instance of [FeggyNetwork].
@@ -119,6 +128,12 @@ final class FeggyNetwork {
       final customError = await customHandler?.call(e);
       if (customError != null) {
         return customError;
+      }
+      if (commonErrorHandles != null) {
+        final commonError = await commonErrorHandles!(e);
+        if (commonError != null) {
+          return commonError;
+        }
       }
       if (e.error.toString().contains('SocketException')) {
         final hasConnection = await FeggyConnectionChecker.hasConnection;
