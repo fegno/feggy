@@ -13,16 +13,17 @@ extension OptionsX on Options {
       assert(false, 'token is null');
       throw Exception('token is null');
     }
-    final headers = {
+    final nHeaders = {
       'Content-Type': 'application/json',
       ...?FeggyNetwork.fixedHeaders,
+      ...?headers,
     };
 
     if (token.isNotEmpty) {
-      headers['Authorization'] = token;
+      nHeaders['Authorization'] = token;
     }
     return copyWith(
-      headers: headers,
+      headers: nHeaders,
     );
   }
 }

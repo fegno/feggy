@@ -1,5 +1,9 @@
 # feggy_core
 
+## 1.0.14
+
+- Fix default headers missing issue
+
 ## 1.0.13
 
 - Fix fixed headers missing issue
