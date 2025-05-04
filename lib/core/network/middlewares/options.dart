@@ -15,6 +15,7 @@ extension OptionsX on Options {
     }
     final headers = {
       'Content-Type': 'application/json',
+      ...?FeggyNetwork.fixedHeaders,
     };
 
     if (token.isNotEmpty) {

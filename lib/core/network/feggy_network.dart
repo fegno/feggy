@@ -45,6 +45,11 @@ final class FeggyNetwork {
   /// Typically used for token refresh or user logout.
   final Future<void>? Function()? onTokenError;
 
+  /// Fixed headers to be included in every request.
+  /// This can be used to set common headers like 'Content-Type', 'Accept', etc.
+  /// that are not dependent on the request.
+  static Map<String, dynamic>? fixedHeaders;
+
   /// Callback function for handling common errors.
   /// This can be used to provide custom error handling logic.
   /// It takes a [DioException] and returns an optional [ApiException].
@@ -62,7 +67,10 @@ final class FeggyNetwork {
     List<int> tokenErrorCodes = const [401],
     Future<void>? Function()? onTokenError,
     FutureOr<ApiException?> Function(DioException error)? commonErrorHandles,
+    Map<String, dynamic>? fixedHeaders,
   }) {
+    // If the instance does not exist, create a new one
+    FeggyNetwork.fixedHeaders = fixedHeaders;
     _instance ??= FeggyNetwork._(
       appDocDir: appDocDir,
       token: token,

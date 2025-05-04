@@ -1,5 +1,9 @@
 # feggy_core
 
+## 1.0.12
+
+- Added fixed headers in app level
+
 ## 1.0.11
 
 - Added common error handler in app level
