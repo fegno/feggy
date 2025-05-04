@@ -608,10 +608,10 @@
       "languageVersion": "3.5"
     }
   ],
-  "generated": "2025-03-11T09:46:20.350115Z",
+  "generated": "2025-05-04T15:10:46.846612Z",
   "generator": "pub",
-  "generatorVersion": "3.7.0",
+  "generatorVersion": "3.7.2",
   "flutterRoot": "file:///Users/salahu/Development/flutter",
-  "flutterVersion": "3.29.0",
+  "flutterVersion": "3.29.3",
   "pubCache": "file:///Users/salahu/.pub-cache"
 }

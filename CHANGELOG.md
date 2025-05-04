@@ -39,3 +39,7 @@
 ## 1.0.10
 
 - Removed `Token` prefix.
+
+## 1.0.11
+
+- Added common error handler in app level
