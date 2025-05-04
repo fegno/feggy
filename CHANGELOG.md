@@ -1,30 +1,14 @@
 # feggy_core
 
-## 1.0.0
+## 1.0.11
 
-- Initial version.
+- Added common error handler in app level
 
-## 1.0.1
+## 1.0.10
 
-- Added `call` method to the `Core` class.
+- Removed `Token` prefix.
 
-## 1.0.3
-
-- Changed packages
-
-## 1.0.4
-
-- Added `Core` class.
-
-## 1.0.5
-
-- Added `Core` class.
-
-## 1.0.6
-
-- Added `Core` class.
-
-## 1.0.7
+## 1.0.9
 
 - Added `Core` class.
 
@@ -32,14 +16,30 @@
 
 - Added `Core` class.
 
-## 1.0.9
+## 1.0.7
 
 - Added `Core` class.
 
-## 1.0.10
+## 1.0.6
 
-- Removed `Token` prefix.
+- Added `Core` class.
 
-## 1.0.11
+## 1.0.5
 
-- Added common error handler in app level
+- Added `Core` class.
+
+## 1.0.4
+
+- Added `Core` class.
+
+## 1.0.3
+
+- Changed packages
+
+## 1.0.1
+
+- Added `call` method to the `Core` class.
+
+## 1.0.0
+
+- Initial version.
