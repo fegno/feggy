@@ -11,7 +11,7 @@ class FeggyApp extends StatelessWidget {
     List<int> tokenErrorCodes = const [401],
     Future<void>? Function()? onTokenError,
     FutureOr<ApiException?> Function(DioException error)? commonErrorHandlers,
-    Map<String, String>? fixedHeaders,
+    Map<String, dynamic>? fixedHeaders,
     super.key,
   }) {
     FeggyNetwork(
